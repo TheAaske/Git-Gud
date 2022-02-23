@@ -8,3 +8,5 @@ def (fuck python):
 
 
 Gooooooood
+
+Python er lort
