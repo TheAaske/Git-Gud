@@ -4,3 +4,4 @@
 General Kenobi
 
 You're a bold one
+def (fuck python):
