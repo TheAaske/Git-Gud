@@ -10,3 +10,8 @@ def (fuck python):
 Gooooooood
 
 Python er lort
+
+
+
+def enfunction(x
+    )
