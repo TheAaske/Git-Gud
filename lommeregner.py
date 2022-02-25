@@ -15,7 +15,7 @@ print("Tryk 'C' og enter for at starte forfra")
 print("Tryk 'Q' og enter for at slutte")
 
 
-while(stoppe == 0):
+while(keyboard.on_press_key(key='q' ) != 'q'):
     print("Start")
     tal1 = input("Skriv et tal: \n")
     operator1 = input("Skriv en operator: \n")
