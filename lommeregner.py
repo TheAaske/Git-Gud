@@ -1,7 +1,5 @@
 #lommeregner opgave
 
-
-from ast import operator
 from asyncio.windows_events import NULL
 
 
@@ -10,31 +8,32 @@ tal2 = NULL
 operator1 = NULL
 resultat = 0
 forfra = NULL
-stoppe = NULL
+stoppe = 0
 
 print("Tryk enter for at gå videre \n")
 print("Tryk 'C' og enter for at starte forfra")
 print("Tryk 'Q' og enter for at slutte")
 
-while(stoppe != 'Q'):
+print("Start")
 tal1 = input("Skriv et tal: \n")
-
 operator1 = input("Skriv en operator: \n")
-
 tal2 = input("Skriv et tal mere: \n")
 
-if(operator1 == '+'):
-    resultat = tal1 + tal2
-    print(f'Resultatet er : {resultat}' )
-elif (operator1 == '-'):
-    resultat = tal1 - tal2
-    print(f'Resultatet er : {resultat}')
-elif (operator1 == '*'):
-    resultat = tal1 * tal2
-    print(f'Resultatet er : {resultat}')
-elif (operator1 == '/'):
-    resultat = tal1 / tal2
-    rest = tal1 % tal2
-    print(f'Resultatet er : {resultat}, med en rest på: {rest}')
-elif (forfra == 'C'):
-    continue
+while(stoppe == 0):
+    if((operator1 == 'Q') or (tal1 == 'Q') or (tal2 == 'Q')):
+        break
+    elif(operator1 == '+'):
+        resultat = int(tal1) + int(tal2)
+        print('Resultatet er : ' + str(resultat) )
+    elif(operator1 == '-'):
+        resultat = int(tal1) - int(tal2)
+        print('Resultatet er : ' + str(resultat))
+    elif(operator1 == '*'):
+        resultat = int(tal1) * int(tal2)
+        print('Resultatet er : ' + str(resultat))
+    elif(operator1 == '/'):
+        resultat = int(tal1) / int(tal2)
+        rest = int(tal1) % int(tal2)
+        print('Resultatet er : ' + str(resultat))
+        print('Med en rest på: ' + str(rest)) 
+    
