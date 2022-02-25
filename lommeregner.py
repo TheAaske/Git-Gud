@@ -1,24 +1,40 @@
 #lommeregner opgave
 
-#bruger skriver et tal (med eller uden operator foran)
+
+from ast import operator
+from asyncio.windows_events import NULL
 
 
+tal1 = NULL
+tal2 = NULL
+operator1 = NULL
+resultat = 0
+forfra = NULL
+stoppe = NULL
+
+print("Tryk enter for at gå videre \n")
+print("Tryk 'C' og enter for at starte forfra")
+print("Tryk 'Q' og enter for at slutte")
+
+while(stoppe != 'Q'):
 tal1 = input("Skriv et tal: \n")
 
-#bruger vælger en operator
+operator1 = input("Skriv en operator: \n")
 
-operator = input("Vælg en operator: \n")
+tal2 = input("Skriv et tal mere: \n")
 
-while((tal1 or operator) != ('=' or 'c')):
-    
-    
-
-#bruger skriver et tal mere
-
-
-#bruger vælger at vise resultat(sum-knappen) eller mulighed for at skrive endnu en operator (uendeligt antal)
-
-#bruger har mulighed for at skrive endnu et tal (uendeligt antal)
-
-#bruger rydder input
-
+if(operator1 == '+'):
+    resultat = tal1 + tal2
+    print(f'Resultatet er : {resultat}' )
+elif (operator1 == '-'):
+    resultat = tal1 - tal2
+    print(f'Resultatet er : {resultat}')
+elif (operator1 == '*'):
+    resultat = tal1 * tal2
+    print(f'Resultatet er : {resultat}')
+elif (operator1 == '/'):
+    resultat = tal1 / tal2
+    rest = tal1 % tal2
+    print(f'Resultatet er : {resultat}, med en rest på: {rest}')
+elif (forfra == 'C'):
+    continue
