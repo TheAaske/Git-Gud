@@ -1,7 +1,7 @@
 #lommeregner opgave
 
 from asyncio.windows_events import NULL
-
+ 
 
 tal1 = NULL
 tal2 = NULL
