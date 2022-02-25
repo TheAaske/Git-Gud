@@ -1,2 +1,3 @@
 #lommeregner opgave
 
+etellerandet
