@@ -1,3 +1,4 @@
+# Laver class for kun plus og minus funktioner
 class plusMinus:
     # Plus funktion
     def plus( x, y):

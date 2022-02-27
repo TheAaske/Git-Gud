@@ -1,4 +1,6 @@
 # Lommeregner opgave
+
+# Importerer classen: plusMinus, fra filen plus_minus.py
 from plus_minus import plusMinus
 
 # Multiplikation funktion
