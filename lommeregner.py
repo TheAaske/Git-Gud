@@ -1,12 +1,25 @@
 # Lommeregner opgave
 
 # Plus funktion
+
+
+import re
+
+
 def plus(x, y):
     return x + y
 
 # Minus funktion
 def minus(x, y):
     return x - y
+
+# Multiplikation funktion
+def multiplikation(x, y):
+    return x * y
+
+# Division funktion
+def division(x, y):
+    return x / y
 
 # En lille menu til lommeregner-funktioner
 print("Vælg en operator")
