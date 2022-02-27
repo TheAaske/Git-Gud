@@ -1,5 +1,9 @@
-# Lommeregner opgave
+#lommeregner opgave
+import keyboard
+from asyncio.windows_events import NULL
+ 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # Importerer classen: plusMinus, fra filen plus_minus.py
 from plus_minus import plusMinus
@@ -50,7 +54,41 @@ while True:
         # Stop hvis man skriver nej
         if regneMere == "nej":
             break
+=======
+tal1 = NULL
+tal2 = NULL
+operator1 = NULL
+resultat = 0
+forfra = NULL
+stoppe = 0
+
+print("Tryk enter for at gå videre \n")
+print("Tryk 'C' og enter for at starte forfra")
+print("Tryk 'Q' og enter for at slutte")
+
+
+while(keyboard.on_press_key(key='q' ) != 'q'):
+    print("Start")
+    tal1 = input("Skriv et tal: \n")
+    operator1 = input("Skriv en operator: \n")
+    tal2 = input("Skriv et tal mere: \n")
     
-    # Hvis inputtet ikke er en af menupunkterne skriver den fejl
-    else:
-        print("Input er ikke et menupunkt!")
+>>>>>>> parent of 0bed2cb (commmit on master)
+    
+    if((operator1 == 'Q') or (tal1 == 'Q') or (tal2 == 'Q')):
+        break
+    elif(operator1 == '+'):
+        resultat = int(tal1) + int(tal2)
+        print('Resultatet er : ' + str(resultat) )
+    elif(operator1 == '-'):
+        resultat = int(tal1) - int(tal2)
+        print('Resultatet er : ' + str(resultat))
+    elif(operator1 == '*'):
+        resultat = int(tal1) * int(tal2)
+        print('Resultatet er : ' + str(resultat))
+    elif(operator1 == '/'):
+        resultat = int(tal1) / int(tal2)
+        rest = int(tal1) % int(tal2)
+        print('Resultatet er : ' + str(resultat))
+        print('Med en rest på: ' + str(rest)) 
+    
