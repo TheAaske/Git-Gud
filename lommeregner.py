@@ -1,17 +1,5 @@
 # Lommeregner opgave
-
-# Plus funktion
-
-
-import re
-
-
-def plus(x, y):
-    return x + y
-
-# Minus funktion
-def minus(x, y):
-    return x - y
+from plus_minus import plusMinus
 
 # Multiplikation funktion
 def multiplikation(x, y):
@@ -39,9 +27,9 @@ while True:
         tal2 = float(input("Indtast andet nummer: \n"))
     
         if(menuValg == '1'):
-            print(tal1, "+", tal2, "=", plus(tal1, tal2))
+            print(tal1, "+", tal2, "=", plusMinus.plus(tal1, tal2))
         elif(menuValg == '2'):
-            print(tal1, "+", tal2, "=", minus(tal1, tal2))
+            print(tal1, "+", tal2, "=", plusMinus.minus(tal1, tal2))
         elif(menuValg == '3'):
             print(tal1, "+", tal2, "=", multiplikation(tal1, tal2))
         elif(menuValg == '4'):
