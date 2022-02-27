@@ -2,14 +2,8 @@
 
 # Importerer classen: plusMinus, fra filen plus_minus.py
 from plus_minus import plusMinus
-
-# Multiplikation funktion
-def multiplikation(x, y):
-    return x * y
-
-# Division funktion
-def division(x, y):
-    return x / y
+# Importere classen: multiDivi, fra filen multi_Divi
+from multi_Divi import multiDivi
 
 # En lille menu til lommeregner-funktioner
 print("Vælg en operator")
@@ -33,10 +27,10 @@ while True:
         elif(menuValg == '2'):
             print(tal1, "+", tal2, "=", plusMinus.minus(tal1, tal2))
         elif(menuValg == '3'):
-            print(tal1, "+", tal2, "=", multiplikation(tal1, tal2))
+            print(tal1, "+", tal2, "=", multiDivi.multiplikation(tal1, tal2))
         elif(menuValg == '4'):
             rest = int(tal1) % int(tal2)
-            print(tal1, "+", tal2, "=", division(tal1, tal2), "\nmed en rest på: ", rest)
+            print(tal1, "+", tal2, "=", multiDivi.division(tal1, tal2), "\nmed en rest på: ", rest)
 
         # Se efter om brugeren vil regne videre
         regneMere = input("Vil du lave endnu en udregning? (ja/nej): \n")
