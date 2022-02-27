@@ -1,9 +1,19 @@
 # Lommeregner opgave
 
+<<<<<<< HEAD
 # Importerer classen: plusMinus, fra filen plus_minus.py
 from plus_minus import plusMinus
 # Importere classen: multiDivi, fra filen multi_Divi
 from multi_Divi import multiDivi
+=======
+# Plus funktion
+def plus(x, y):
+    return x + y
+
+# Minus funktion
+def minus(x, y):
+    return x - y
+>>>>>>> parent of f69bb66 (commit)
 
 # En lille menu til lommeregner-funktioner
 print("Vælg en operator")
