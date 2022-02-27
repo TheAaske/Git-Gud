@@ -1,6 +1,5 @@
 # Class til Multiplikation og Division
 class multiDivi:
-
     # Multiplikation funktion
     def multiplikation(x, y):
         return x * y
