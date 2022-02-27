@@ -13,6 +13,9 @@ def plus(x, y):
 # Minus funktion
 def minus(x, y):
     return x - y
+<<<<<<< HEAD
+>>>>>>> parent of f69bb66 (commit)
+=======
 >>>>>>> parent of f69bb66 (commit)
 
 # En lille menu til lommeregner-funktioner
