@@ -18,6 +18,9 @@ def plus(x, y):
 def minus(x, y):
     return x - y
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f69bb66 (commit)
+=======
 >>>>>>> parent of f69bb66 (commit)
 =======
 >>>>>>> parent of f69bb66 (commit)
