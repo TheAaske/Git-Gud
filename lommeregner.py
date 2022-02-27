@@ -1,9 +1,6 @@
 # Lommeregner opgave
 
 # Plus funktion
-from pkg_resources import register_namespace_handler
-
-
 def plus(x, y):
     return x + y
 
